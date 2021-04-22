@@ -1,11 +1,15 @@
-# puts "this is a test: stefano"
+puts "What's the weather today?"
+temp = gets.chomp
+temp = temp.to_i
 
-print "Insert degree in Celsius to convert in Fahrenheit: "
-celsius = gets.strip
-fahrenheit = (celsius.to_i * 9/5) +32
-print "The result is: "
-print fahrenheit.to_i
-puts "."
+case temp
+when 0..14
+    puts "It's too cold"
+when 15..28
+    puts "It's beautiful today"
+else
+    puts "it's too hot"
+end
 
 print "Insert a temperature: "
 yourTemp = gets.strip

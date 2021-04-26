@@ -1,6 +1,6 @@
 puts "What's the weather today?"
-temp = gets.chomp
-temp = temp.to_i
+temp = gets.chomp.to_i
+#temp = temp.to_i
 
 case temp
 when 0..14
@@ -12,8 +12,8 @@ else
 end
 
 print "Insert a temperature: "
-yourTemp = gets.strip
-yourTemp = yourTemp.to_i
+yourTemp = gets.strip.to_i
+#yourTemp = yourTemp.to_i
 
 isRain = true
 print "Is it raining? (yes or no)"

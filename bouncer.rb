@@ -1,4 +1,4 @@
-#Check if the person is older than 18 yo and not drunk
+#Check if the person is older than 18 yo and whether drunk or not drunk
 puts "How old are you?"
 yourAge = gets.strip
 yourAge = yourAge.to_i

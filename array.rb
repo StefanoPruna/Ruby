@@ -1,19 +1,19 @@
 #test exercise
-# arr = [5, 22, 29, 39, 19, 51, 78,96,84]
-# i = 0
-# while (i < arr.size[i-1] && arr[i] < arr[i+1]) do
-#         if arr[i] > arr[i+1]
-#                 arr[4] = arr[2]
-#                 arr[2] = arr[4]
-#                 arr[i+1] = arr[i-1]
-#                 i = i + 1 
-#         end
-# end
-# #puts arr.sort
-# puts i
-# puts arr
-#      arr[i] = arr[i+1]
-#      arr[i+1] = arr[i]
+arr = [5, 22, 29, 39, 19, 51, 78,96,84]
+i = 0
+while (i < arr.size[i-1] && arr[i] < arr[i+1]) do
+        if arr[i] > arr[i+1]
+                arr[4] = arr[2]
+                arr[2] = arr[4]
+                arr[i+1] = arr[i-1]
+                i = i + 1 
+        end
+end
+#puts arr.sort
+puts i
+puts arr
+     arr[i] = arr[i+1]
+     arr[i+1] = arr[i]
 
 
 #examples of array
@@ -43,17 +43,17 @@
 # end
 
 #Using method/function
-def is_name_in_array(names,name)
-        for i in names
-                if (names .include? name)
-                        return "Your name is in the list"
-		else
-			return "Your name is not in the list"
-		end
-        end
-end
+# def is_name_in_array(names,name)
+#         for i in names
+#                 if (names .include? name)
+#                         return "Your name is in the list"
+# 		else
+# 			return "Your name is not in the list"
+# 		end
+#         end
+# end
 
-# call the method
-puts "Insert your name:"
-name = gets.strip
-puts is_name_in_array(["lin", "nandini", "carl", "zeb", "janel", "varsha", "lavanya", "bianca"], name)
+# # call the method
+# puts "Insert your name:"
+# name = gets.strip
+# puts is_name_in_array(["lin", "nandini", "carl", "zeb", "janel", "varsha", "lavanya", "bianca"], name)

@@ -19,26 +19,41 @@
 #examples of array
 # shopping_list = ["coffee", "nutella", "milk", "wine", "bread"]
 # #puts shopping_list
-# updated_shopping_list = shopping_list.clone
-# updated_shopping_list.delete_at(4)
-# updated_shopping_list.delete_at(0)
+# updated_shopping_list = shopping_list.clone #copy the array into a different one and doesn't modify the original array
+# updated_shopping_list.delete("milk")
+# updated_shopping_list.push("butter")#add a new element into the array as last
+# updated_shopping_list.unshift("pasta")#add a new element as first element in the Array
+# updated_shopping_list.delete_at(-1)#remove the last element of the array
+# updated_shopping_list.pop()#remove the last element of the array
+#But if you have duplicate elements, it will remove them all
 # updated_shopping_list[3]="beer"
 # updated_shopping_list[4]="cheese"
 # updated_shopping_list.shuffle! #print the array randomizing the order
 # puts updated_shopping_list
 # puts shopping_list
 
-#check if a value is in the array
-puts "What is the number to search for?"
-number = gets.chomp.to_i
+#check if a element is in the array from user's input
+# puts "What is the number to search for?"
+# number = gets.chomp.to_i
 
-numbers = [4, 5, 3, -7, 20, 0, 5]
+# if (numbers = [4, 5, 3, -7, 20, 0, 5] .include? number)
+#         puts "Found in array"        
+# else
+#         puts "Not found in array"        
+# end
 
-#for i in numbers
-
-        if number in numbers
-                puts "Found in array"
-        else
-                puts "Not found in array"
+#Using method/function
+def is_name_in_array(names,name)
+        for i in names
+                if (names .include? name)
+                        return "Your name is in the list"
+		else
+			return "Your name is not in the list"
+		end
         end
+end
 
+# call the method
+puts "Insert your name:"
+name = gets.strip
+puts is_name_in_array(["lin", "nandini", "carl", "zeb", "janel", "varsha", "lavanya", "bianca"], name)

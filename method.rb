@@ -9,7 +9,7 @@ print_greeting("ste")
 def add_three(number)
     puts "Inser a number"
     number = gets.strip.to_i
-    return number+3
+    print number+3
 end
 
 add_three(3)

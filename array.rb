@@ -2,16 +2,10 @@
 arr = [5, 22, 29, 39, 19, 51, 78,96,84]
 i = 0
 while (i < arr.size[i-1] && arr[i] < arr[i+1]) do
-        if arr[i] > arr[i+1]
-                arr[4] = arr[2]
-                arr[2] = arr[4]
-                arr[i+1] = arr[i-1]
-                i = i + 1 
-        end
+        i = i + 1 
 end
 #puts arr.sort
 puts i
-puts arr
      arr[i] = arr[i+1]
      arr[i+1] = arr[i]
 
@@ -21,8 +15,10 @@ puts arr
 # #puts shopping_list
 # updated_shopping_list = shopping_list.clone #copy the array into a different one and doesn't modify the original array
 # updated_shopping_list.delete("milk")
+# updated_shopping_list.delete_at(index)()#remove the element at the given index of the array
 # updated_shopping_list.push("butter")#add a new element into the array as last
-# updated_shopping_list.unshift("pasta")#add a new element as first element in the Array
+# updated_shopping_list.shift()#remove the first element of the array
+# updated_shopping_list.unshift("pasta")#add/append a new element as first element in the Array
 # updated_shopping_list.delete_at(-1)#remove the last element of the array
 # updated_shopping_list.pop()#remove the last element of the array
 #But if you have duplicate elements, it will remove them all

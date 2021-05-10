@@ -25,3 +25,13 @@ uniqueValue([3,3,4,4,4,5,5,5,7, "los", "los"])
 # end 
 
 # puts newArray.compact.length
+
+#
+#to sum the value of an array
+def sumArray(array)
+    sum = 0
+    array.each { |a| sum+=a }
+    return sum
+end
+
+print sumArray([10, 20, -10, 5, 0, -6, 4])

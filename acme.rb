@@ -5,17 +5,16 @@ def yourSkill()
     codingSkills.each do |i|
         puts "What's your coding skills for #{i} (1 to 128):"
         skill = gets.chomp.to_i
-        overalSkill.push skill
+        overalSkill.push(skill)
         if skill < 64
             puts "You should improve #{i}"
         else
-            puts "good Job!"
+            puts "Good Job!"
         end
-        overalSkill.inject
     end
-    print overalSkill
-    
-    #return overalSkill
+    sum = 0
+    overalSkill.each { |a| sum+=a }
+    puts "Your overall score is: #{sum}"
 end
 
 yourSkill()

@@ -1,13 +1,13 @@
 #test exercise
-arr = [5, 22, 29, 39, 19, 51, 78,96,84]
+arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
 i = 0
-while (i < arr.size[i-1] && arr[i] < arr[i+1]) do
+while (i < arr.size && arr[i] < arr[i+1]) do
         i = i + 1 
 end
-#puts arr.sort
 puts i
-     arr[i] = arr[i+1]
-     arr[i+1] = arr[i]
+        arr[4], arr[3] = arr[3], arr[4]
+print arr
+#result should be:[5, 22, 29, 19, 39, 51, 78, 96, 84]
 
 
 #examples of array

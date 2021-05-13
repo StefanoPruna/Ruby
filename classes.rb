@@ -1,3 +1,5 @@
+#exercises
+
 class Dog
     attr_reader :breed, :age, :walks
     attr_accessor :name

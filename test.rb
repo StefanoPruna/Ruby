@@ -1,4 +1,5 @@
 # puts "this is a test: stefano"
+#test for ssh key
 
 print "Insert degree in Celsius to convert in Fahrenheit: "
 celsius = gets.strip

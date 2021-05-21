@@ -1,3 +1,4 @@
+#refering to "andClasses.rb" and "cat.rb" files
 class Pet
     attr_reader :type #to read
     attr_accessor :name #to write
